@@ -39,6 +39,12 @@ public class TreeNode implements Treeable
   {
     return rightTreeNode;
   }
+  public String getRightS(){
+    return ""+rightTreeNode;
+  }
+  public String getLeftS(){
+    return ""+leftTreeNode;
+  }
 
   public void setValue(Comparable value)
   {

@@ -10,15 +10,15 @@ public class ClubTree {
   }
   TreeNode buildTree(){
     //lvl 1
-    root=new TreeNode("First Question");
+    root=new TreeNode("Would you like to see which club you best fit in?");
     //lvl 2
-    root.setLeft(new TreeNode("L2 Left"));
-    root.setRight(new TreeNode("L2 Right"));
+    root.setLeft(new TreeNode("First question"));
+    root.setRight(new TreeNode(null));
     //lvl 3
     root.getLeft().setLeft(new TreeNode("L3 Left Left"));
     root.getLeft().setRight(new TreeNode("L3 Left Right"));
-    root.getRight().setLeft(new TreeNode("L3 Right Left"));
-    root.getRight().setRight(new TreeNode("L3 Right Right"));
+    root.getRight().setLeft(new TreeNode("L3 Left Right"));
+    root.getRight().setRight(new TreeNode("L3 Left Right"));
     //lvl 4
     root.getLeft().getLeft().setLeft(new TreeNode("L4 Left Left Left"));
     root.getLeft().getLeft().setRight(new TreeNode("L4 Left Left Right"));
@@ -51,7 +51,7 @@ public class ClubTree {
     root.getRight().getRight().getRight().setLeft(new TreeNode("L5 Right Right Right Left"));
     root.getRight().getRight().getRight().setRight(new TreeNode("L5 Right Right Right Right"));
     
-    return current;
+    return root;
   }
   
 }
